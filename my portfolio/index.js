@@ -225,6 +225,13 @@ buttonSendEmail.addEventListener("click", () => {
             containerPopup.style.display = "none";
         });
     }
+    else {
+        inputName.value = "";
+        inputEmail.value = "";
+        inputSubject.value = "";
+        inputMessage.value = "";
+        alert("Message send");
+    }
 })
 
 
