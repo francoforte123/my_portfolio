@@ -1,0 +1,1627 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* start the nav bar */
+header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+}
+
+header nav {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav img {
+    width: 90px;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 5%;
+}
+
+header nav .links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav .links a {
+    color: rgb(198, 198, 198);
+    text-decoration: none;
+    margin: 35px;
+}
+
+header nav .links a:hover {
+    color: white;
+}
+
+
+
+/* start the main page */
+/* section dedicate of welcome page */
+main .container-welcome-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(5, 5, 5);
+}
+
+main .container-welcome-page .container-welcome-text {
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 250px;
+    left: 20%;
+    z-index: 2;
+}
+
+main .container-welcome-page .container-welcome-text>p:first-child {
+    color: rgb(207, 23, 103);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+main .container-welcome-page .container-welcome-text>p:last-child {
+    color: white;
+    font-size: 60px;
+    margin: 0;
+}
+
+main .container-welcome-page .container-imgs {
+    position: absolute;
+    top: 90px;
+    right: 400px;
+}
+
+main .container-welcome-page .container-imgs img:first-child {
+    position: absolute;
+    top: 20%;
+    right: -25px;
+    width: 450px;
+    height: 500px;
+}
+
+main .container-welcome-page .container-imgs img:last-child {
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+    right: -80px;
+    width: 350px;
+    height: 440px;
+    object-fit: cover;
+}
+
+
+
+/* section dedicate of about page */
+
+.section-about {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(236, 240, 243);
+}
+
+.section-about h1 {
+    margin: 0;
+    padding-top: 90px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.section-about .container-section-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-about .container-section-about .container-text-child {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+}
+
+.section-about p {
+    font-size: 17px;
+}
+
+/* section dedicate of resume page  */
+.section-resume {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(236, 240, 243);
+}
+
+.section-resume h1 {
+    margin: 0;
+    padding: 90px 0px 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.section-resume .container-tabs {
+    width: 60%;
+    margin: auto;
+    height: 60%;
+}
+
+.section-resume .container-tabs .container-buttons {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(25, 135, 84);
+}
+
+.section-resume .container-tabs .container-buttons button {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 135, 84);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.section-resume .container-tabs .container-buttons button:hover {
+    background-color: cyan;
+}
+
+.section-resume .container-tabs-text {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    overflow: auto;
+    min-height: 360px;
+}
+
+.container-tabs-text .axis-central {
+    width: 5px;
+    height: 1230px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    z-index: 1;
+}
+
+
+/* section container education */
+.section-resume .text-education1 {
+    position: absolute;
+    top: 40px;
+    left: 4%;
+}
+
+.section-resume .education-style {
+    width: 290px;
+    height: 250px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    background: #fff;
+    z-index: 5;
+}
+
+.section-resume .container-tabs-text .container-education .axis-education1 {
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
+
+.section-resume .axis-education-style {
+    width: 5px;
+    height: 12%;
+    background-color: black;
+    transform: rotate(90deg);
+}
+
+.section-resume .text-education2 {
+    position: absolute;
+    top: 97%;
+    right: 5%;
+    height: 370px;
+}
+
+.section-resume .container-tabs-text .container-education .axis-education2 {
+    position: absolute;
+    top: 145%;
+    right: 47%;
+}
+
+.section-resume .text-education3 {
+    position: absolute;
+    top: 215%;
+    left: 4%;
+    height: 380px;
+}
+
+.section-resume .container-tabs-text .container-education .axis-education3 {
+    position: absolute;
+    top: 270%;
+    left: 47%;
+}
+
+.section-resume .text-education1 p,
+.section-resume .text-education1 h2,
+.section-resume .text-education2 p,
+.section-resume .text-education2 h2,
+.section-resume .text-education3 p,
+.section-resume .text-education3 h2,
+.section-resume .text-work1 p,
+.section-resume .text-work1 h2,
+.section-resume .text-work2 p,
+.section-resume .text-work2 h2,
+.section-resume .text-skills1 p,
+.section-resume .text-skills2 p,
+.section-resume .text-skills3 p,
+.section-resume .text-skills4 p,
+.section-resume .text-skills5 p {
+    margin: 0;
+}
+
+
+
+
+/* section container work */
+.section-resume .container-work {
+    width: 100%;
+    height: 100%;
+}
+
+.section-resume .axis-central-work {
+    width: 5px;
+    height: 1250px;
+    background-color: black;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-resume .container-work .work-style {
+    width: 300px;
+    height: 520px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 18px;
+    background: #fff;
+}
+
+.section-resume .container-work .text-work1 {
+    position: absolute;
+    top: 40px;
+    left: 4%;
+}
+
+.section-resume .container-work .axis-work-style {
+    width: 5px;
+    height: 8%;
+    background-color: black;
+    transform: rotate(90deg);
+}
+
+.section-resume .container-work .axis-work1 {
+    position: absolute;
+    top: 58%;
+    left: 48%;
+}
+
+.section-resume .container-work .text-work2 {
+    position: absolute;
+    top: 170%;
+    right: 4%;
+    height: 565px;
+}
+
+.section-resume .container-work .axis-work2 {
+    position: absolute;
+    top: 260%;
+    right: 48%;
+}
+
+
+
+/* section container skills */
+.section-resume .container-skills {
+    width: 100%;
+    height: 100%;
+}
+
+.axis-central-skills {
+    width: 5px;
+    height: 850px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+
+.section-resume .container-skills .text-skills1,
+.section-resume .container-skills .text-skills3,
+.section-resume .container-skills .text-skills5 {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    gap: 5px;
+}
+
+.section-resume .container-skills .skills-style {
+    width: 253px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container-skills .axis-skills1,
+.container-skills .axis-skills3,
+.container-skills .axis-skills5 {
+    position: absolute;
+    top: 22%;
+    left: 47.1%;
+}
+
+.container-skills .axis-style {
+    width: 5px;
+    height: 12%;
+    background-color: black;
+    transform: rotate(90deg);
+}
+
+.section-resume .container-skills .text-skills2,
+.section-resume .container-skills .text-skills4 {
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    gap: 5px;
+}
+
+.container-skills .axis-skills2,
+.container-skills .axis-skills4 {
+    position: absolute;
+    top: 67%;
+    right: 47.1%;
+}
+
+.section-resume .container-skills .text-skills3 {
+    top: 100%;
+}
+
+.container-skills .axis-skills3 {
+    top: 112%;
+}
+
+.section-resume .container-skills .text-skills4 {
+    top: 147%;
+}
+
+.container-skills .axis-skills4 {
+    top: 160%;
+}
+
+.section-resume .container-skills .text-skills5 {
+    top: 192%;
+}
+
+.container-skills .axis-skills5 {
+    top: 205%;
+}
+
+
+
+/* section dedicate for projects */
+.section-projects h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    padding: 90px 0px 10px;
+}
+
+.section-projects {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(236, 240, 243);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-projects .container-projects {
+    width: 90%;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.arrow-left,
+.arrow-right {
+    background: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-viewport {
+    width: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.slider-track {
+    display: flex;
+    align-items: center;
+    height: 410px;
+    gap: 30px;
+    transition: transform 0.5s ease;
+}
+
+.container-card {
+    min-width: 220px;
+    height: 350px;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(to bottom,
+            rgb(138, 39, 219) 0%,
+            rgb(138, 39, 219) 40%,
+            white 40%,
+            white 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.container-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container-card p {
+    margin-top: 95%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.container-card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container-card .button-link {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(138, 39, 219);
+    color: white;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.section-projects .container-projects .container-card .button-link:hover {
+    cursor: pointer;
+}
+
+.section-projects select {
+    margin-top: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.section-projects select:focus {
+    outline: none;
+}
+
+.section-projects select option {
+    margin-top: 15px;
+}
+
+
+
+/* section dedicate for form contact */
+.section-contact {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(236, 240, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.section-contact h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    padding: 60px 0px 10px;
+}
+
+.section-contact .container-form {
+    width: 65%;
+    height: 420px;
+    display: flex;
+    align-items: center;
+}
+
+.section-contact .container-form img {
+    width: 50%;
+    height: 100%;
+}
+
+.section-contact .container-form form {
+    background-color: rgb(217, 217, 217);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.section-contact .container-form input {
+    width: 270px;
+    height: 40px;
+    padding-left: 5px;
+}
+
+.section-contact .container-form input:focus,
+.section-contact .container-form textarea:focus {
+    outline: none;
+}
+
+.section-contact .container-form textarea {
+    width: 270px;
+    height: 150px;
+    padding-left: 5px;
+}
+
+.section-contact .container-form button {
+    width: 130px;
+    height: 43px;
+    background-color: rgb(138, 39, 219);
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+
+.section-contact .container-form button:hover {
+    cursor: pointer;
+}
+
+.section-contact .container-icon-contact {
+    width: 110px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    gap: 10px;
+}
+
+.section-contact .container-icon-contact img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.section-contact.modal-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 998;
+}
+
+.section-contact .container-popup {
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 999;
+}
+
+.section-contact img {
+    width: 60px;
+    height: 60px;
+}
+
+.section-contact .container-popup h1 {
+    font-size: 40px;
+    padding: 25px 0px 0px 0px;
+}
+
+.section-contact .container-popup button {
+    width: 80px;
+    height: 35px;
+    background-color: rgb(64, 64, 240);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+/* tablet horizontal */
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    header nav .links {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    header nav .links a {
+        margin: 0;
+    }
+
+
+
+    /* start the main page */
+    /* section dedicate of welcome page */
+    main .container-welcome-page .container-welcome-text {
+        width: 600px;
+        height: 200px;
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        z-index: 2;
+    }
+
+    main .container-welcome-page .container-welcome-text>p:first-child {
+        color: rgb(207, 23, 103);
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    main .container-welcome-page .container-welcome-text>p:last-child {
+        color: white;
+        font-size: 50px;
+        margin: 0;
+    }
+
+    main .container-welcome-page .container-imgs {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+    }
+
+
+
+
+
+    /* section dedicate of about page */
+    .section-about .container-section-about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .section-about p {
+        font-size: 15px;
+    }
+
+
+
+    /* section dedicate of resume page  */
+    .section-resume .container-tabs {
+        width: 75%;
+        margin: auto;
+        height: 80%;
+    }
+
+    .container-tabs-text .axis-central {
+        height: 1220px;
+    }
+
+
+
+
+    /* section container education */
+    .section-resume .container-education .axis-central {
+        height: 1250px;
+    }
+
+    .section-resume .container-tabs-text .container-education .axis-education1 {
+        position: absolute;
+        top: 27%;
+        left: 47%;
+    }
+
+    .section-resume .text-education2 {
+        position: absolute;
+        top: 100%;
+        right: 4%;
+    }
+
+    .section-resume .container-tabs-text .container-education .axis-education2 {
+        position: absolute;
+        top: 120%;
+        right: 47%;
+    }
+
+    .section-resume .text-education3 {
+        position: absolute;
+        top: 220%;
+        left: 4%;
+    }
+
+    .section-resume .container-tabs-text .container-education .axis-education3 {
+        position: absolute;
+        top: 250%;
+        left: 47%;
+    }
+
+
+
+
+    /* section container work */
+    .section-resume .container-work .axis-central-work {
+        width: 5px;
+        height: 1300px;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .section-resume .container-work .text-work1 {
+        position: absolute;
+        top: 40px;
+        left: 3%;
+        z-index: 1;
+    }
+
+    .section-resume .container-work .axis-work1 {
+        position: absolute;
+        top: 55%;
+        left: 48%;
+    }
+
+    .section-resume .container-work .text-work2 {
+        position: absolute;
+        top: 180%;
+        right: 3%;
+        z-index: 1;
+    }
+
+    .section-resume .container-work .axis-work2 {
+        position: absolute;
+        top: 220%;
+        right: 48%;
+    }
+
+
+
+    /* section container skills */
+
+    .axis-central-skills {
+        width: 5px;
+        height: 870px;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .container-skills .axis-style {
+        height: 9%;
+    }
+
+    .container-skills .axis-skills1 {
+        position: absolute;
+        top: 19.5%;
+        left: 47.5%;
+    }
+
+    .section-resume .container-skills .text-skills2 {
+        position: absolute;
+        top: 55%;
+    }
+
+    .container-skills .axis-skills2 {
+        position: absolute;
+        top: 65%;
+        right: 47.5%;
+    }
+
+    .section-resume .container-skills .text-skills3 {
+        position: absolute;
+        top: 100%;
+    }
+
+    .container-skills .axis-skills3 {
+        position: absolute;
+        top: 110%;
+        left: 47.5%;
+    }
+
+    .section-resume .container-skills .text-skills4 {
+        position: absolute;
+        top: 145%;
+    }
+
+    .container-skills .axis-skills4 {
+        position: absolute;
+        top: 155%;
+        right: 47.5%;
+    }
+
+    .section-resume .container-skills .text-skills5 {
+        position: absolute;
+        top: 190%;
+    }
+
+    .container-skills .axis-skills5 {
+        position: absolute;
+        top: 200%;
+        left: 47.5%;
+    }
+
+
+
+
+
+    /* section dedicate for projects */
+    .section-projects {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(236, 240, 243);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-projects h1 {
+        padding: 0;
+    }
+
+
+
+
+
+    /* section dedicate for form contact */
+    .section-contact {
+        gap: 60px;
+    }
+
+    .section-contact h1 {
+        padding: 0;
+    }
+
+    .section-contact .container-form {
+        width: 80%;
+        height: 420px;
+        display: flex;
+        align-items: center;
+    }
+
+    .section-contact .container-form img {
+        width: 60%;
+        height: 100%;
+    }
+}
+
+
+/* tablet vertical */
+@media (max-width: 768px) and (orientation: portrait) {
+
+    /* start the nav bar */
+
+    header nav {
+        height: 70px;
+        background-color: black;
+    }
+
+    header nav img {
+        width: 80px;
+    }
+
+    header nav .links {
+        gap: 30px;
+    }
+
+    header nav .links a {
+        margin: 0;
+    }
+
+
+
+    /* section dedicate of welcome page */
+
+    main .container-welcome-page .container-welcome-text {
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        top: 350px;
+        left: 10%;
+        z-index: 2;
+    }
+
+    main .container-welcome-page .container-welcome-text>p:first-child {
+        font-size: 20px;
+    }
+
+    main .container-welcome-page .container-welcome-text>p:last-child {
+        font-size: 40px;
+    }
+
+    main .container-welcome-page .container-imgs {
+        position: absolute;
+        top: 190px;
+        right: 100px;
+    }
+
+
+
+
+    /* section dedicate of about page */
+    .section-about h1 {
+        padding-top: 90px;
+    }
+
+    .section-about .container-section-about .container-text-child {
+        width: 77%;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .section-about .container-section-about .container-text-child:last-child {
+        margin-top: 40px;
+    }
+
+    .section-about p {
+        font-size: 19px;
+    }
+
+
+
+
+
+    /* section dedicate of resume page  */
+    .section-resume .container-tabs {
+        width: 80%;
+        height: 70%;
+        background-color: white;
+    }
+
+    .section-resume .axis-central {
+        height: 1620px;
+    }
+
+    .section-resume .container-tabs-text {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: relative;
+        overflow: auto;
+        min-height: 550px;
+    }
+
+    /* section container education */
+    .section-resume .text-education1 {
+        position: absolute;
+        top: 40px;
+        left: 4%;
+        width: 200px;
+        height: 360px;
+    }
+
+    .section-resume .container-tabs-text .container-education .axis-education1 {
+        position: absolute;
+        top: 35%;
+        left: 44%;
+    }
+
+    .section-resume .text-education2 {
+        position: absolute;
+        top: 85%;
+        right: 5%;
+        width: 200px;
+        height: 485px;
+    }
+
+    .section-resume .container-tabs-text .container-education .axis-education2 {
+        position: absolute;
+        top: 125%;
+        right: 44%;
+    }
+
+    .section-resume .text-education3 {
+        position: absolute;
+        top: 185%;
+        left: 4%;
+        width: 200px;
+        height: 510px;
+    }
+
+    .section-resume .container-tabs-text .container-education .axis-education3 {
+        position: absolute;
+        top: 227%;
+        left: 44%;
+    }
+
+
+
+
+    /* section container work */
+
+
+    .section-resume .axis-central-work {
+        height: 1750px;
+    }
+
+    .section-resume .container-work .work-style {
+        width: 200px;
+    }
+
+    .section-resume .container-work .text-work1 {
+        position: absolute;
+        top: 40px;
+        left: 4%;
+        height: 775px;
+    }
+
+    .section-resume .container-work .axis-work1 {
+        position: absolute;
+        top: 67%;
+        left: 46%;
+    }
+
+    .section-resume .container-work .text-work2 {
+        position: absolute;
+        top: 160%;
+        right: 4%;
+        height: 790px;
+    }
+
+    .section-resume .container-work .axis-work2 {
+        position: absolute;
+        top: 230%;
+        right: 45.7%;
+    }
+
+
+
+    /* section container skills */
+
+    .axis-central-skills {
+        height: 880px;
+        z-index: 1;
+    }
+
+
+    .section-resume .container-skills .text-skills1,
+    .section-resume .container-skills .text-skills3,
+    .section-resume .container-skills .text-skills5 {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        gap: 5px;
+    }
+
+    .section-resume .container-skills .skills-style {
+        width: 210px;
+    }
+
+    .container-skills .axis-skills1,
+    .container-skills .axis-skills3,
+    .container-skills .axis-skills5 {
+        position: absolute;
+        top: 19.5%;
+        left: 47%;
+    }
+
+    .container-skills .axis-style {
+        height: 5%;
+    }
+
+    .section-resume .container-skills .text-skills2,
+    .section-resume .container-skills .text-skills4 {
+        position: absolute;
+        top: 40%;
+        right: 5%;
+    }
+
+    .container-skills .axis-skills2 {
+        position: absolute;
+        top: 49%;
+        right: 47%;
+    }
+
+    .section-resume .container-skills .text-skills3 {
+        position: absolute;
+        top: 69%;
+    }
+
+    .container-skills .axis-skills3 {
+        position: absolute;
+        top: 78.5%;
+    }
+
+    .section-resume .container-skills .text-skills4 {
+        position: absolute;
+        top: 99%;
+    }
+
+    .container-skills .axis-skills4 {
+        position: absolute;
+        top: 108.5%;
+    }
+
+    .section-resume .container-skills .text-skills5 {
+        position: absolute;
+        top: 128%;
+    }
+
+    .container-skills .axis-skills5 {
+        position: absolute;
+        top: 137%;
+    }
+
+
+
+
+    /* section dedicate for projects */
+    .section-projects h1 {
+        padding-bottom: 40px;
+    }
+
+    .section-projects .container-projects {
+        padding-bottom: 40px;
+    }
+
+
+
+
+    /* section dedicate for form contact */
+
+    .section-contact h1 {
+        padding: 0;
+        margin-bottom: 90px;
+    }
+
+    .section-contact .container-form {
+        width: 90%;
+    }
+
+    .section-contact .container-form input {
+        width: 200px;
+    }
+
+    .section-contact .container-form input:focus,
+    .section-contact .container-form textarea:focus {
+        outline: none;
+    }
+
+    .section-contact .container-form textarea {
+        width: 200px;
+    }
+
+    .section-contact.modal-open::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 998;
+    }
+
+    .section-contact .container-popup img {
+        padding-top: 30px;
+    }
+
+    .section-contact .container-popup h1 {
+        font-size: 40px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-contact .container-popup p{
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* start the nav bar */
+    header .links {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        background-color: black;
+        align-items: center;
+        flex-direction: column;
+        display: none !important;
+        z-index: 100;
+        padding: 10px;
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+    }
+
+    header .links.active {
+        display: flex !important;
+    }
+
+    .hamburger {
+        display: flex;
+        padding-right: 20px;
+    }
+
+
+
+
+    /* start the main page */
+    /* section dedicate of welcome page */
+
+    main .container-welcome-page .container-welcome-text {
+        position: absolute;
+        top: 260px;
+        left: 7%;
+    }
+
+    main .container-welcome-page .container-welcome-text>p:first-child {
+        font-size: 20px;
+    }
+
+    main .container-welcome-page .container-welcome-text>p:last-child {
+        font-size: 40px;
+    }
+
+    main .container-welcome-page .container-imgs {
+        position: absolute;
+        top: 160px;
+        right: 40px;
+        height: 100%;
+        width: 100%;
+    }
+
+    main .container-welcome-page .container-imgs img:first-child {
+        width: 370px;
+        position: absolute;
+        top: 0%;
+        right: 25px;
+    }
+
+    main .container-welcome-page .container-imgs img:last-child {
+        position: absolute;
+        right: -2%;
+    }
+
+
+
+
+    /* section dedicate of about page */
+    .section-about h1 {
+        padding-top: 80px;
+    }
+
+    .section-about .container-section-about {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-about .container-section-about .container-text-child {
+        width: 410px;
+        padding: 10px;
+    }
+
+    .section-about p {
+        font-size: 17px;
+    }
+
+
+
+
+    /* section dedicate of resume page  */
+    .section-resume h1 {
+        padding: 90px 0px 15px;
+        font-size: 40px;
+    }
+
+    .section-resume .container-tabs {
+        width: 85%;
+    }
+
+    .section-resume .container-tabs .container-buttons button {
+        font-size: 18px;
+    }
+
+    .container-tabs-text .axis-central {
+        height: 1230px;
+    }
+
+
+
+
+
+
+    /* section container education */
+    .section-resume .container-education .axis-central {
+        height: 1420px;
+    }
+
+    .section-resume .text-education1 {
+        position: absolute;
+        top: 7%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        height: 300px;
+        width: 60%;
+    }
+
+    .section-resume .text-education2 {
+        position: absolute;
+        top: 75%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        height: 395px;
+        width: 60%;
+    }
+
+    .section-resume .text-education3 {
+        position: absolute;
+        top: 160%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        height: 460px;
+        width: 60%;
+    }
+
+
+
+
+    /* section container work */
+    .section-resume .container-work .axis-central-work {
+        height: 1400px;
+    }
+
+    .section-resume .container-work .text-work1 {
+        position: absolute;
+        top: 5%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60%;
+        height: 610px;
+    }
+
+    .section-resume .container-work .text-work2 {
+        position: absolute;
+        top: 125%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60%;
+        height: 640px;
+    }
+
+    .section-resume .container-work .axis-work1,
+    .section-resume .container-work .axis-work2 {
+        display: none;
+    }
+
+
+
+
+
+    /* section container skills */
+    .axis-central-skills {
+        height: 720px;
+        z-index: 2;
+    }
+
+    .section-resume .container-skills .text-skills1 {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60%;
+        height: 60px;
+        z-index: 5;
+    }
+
+    .section-resume .container-skills .text-skills2 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60%;
+        height: 60px;
+        z-index: 5;
+    }
+
+    .section-resume .container-skills .text-skills3 {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60%;
+        height: 60px;
+        z-index: 5;
+    }
+
+    .section-resume .container-skills .text-skills4 {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60%;
+        height: 60px;
+        z-index: 5;
+    }
+
+    .section-resume .container-skills .text-skills5 {
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 60%;
+        height: 60px;
+        z-index: 5;
+    }
+
+    .container-skills .axis-skills1,
+    .container-skills .axis-skills2,
+    .container-skills .axis-skills3,
+    .container-skills .axis-skills4,
+    .container-skills .axis-skills5 {
+        display: none;
+    }
+
+
+
+
+
+    /* section dedicate for projects */
+    .section-projects h1 {
+        padding: 120px 0px 40px;
+    }
+
+    .section-projects .container-projects {
+        width: 95%;
+        padding: 0;
+        scroll-margin-top: 80px;
+    }
+
+    .container-card {
+        min-width: 210px;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        display: none;
+    }
+
+    .slider-viewport {
+        overflow-x: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .slider-track {
+        gap: 15px;
+    }
+
+    .section-projects select {
+        margin-top: 40px;
+    }
+
+
+
+
+    /* section dedicate for form contact */
+    .section-contact h1 {
+        margin: 0px;
+        padding-bottom: 40px;
+    }
+
+    .section-contact .container-form {
+        width: 80%;
+        height: 500px;
+    }
+
+    .section-contact .container-form img {
+        display: none;
+    }
+
+    .section-contact .container-form input {
+        width: 270px;
+        height: 40px;
+        padding-left: 5px;
+    }
+
+    .section-contact .container-form textarea {
+        width: 270px;
+        height: 150px;
+        padding-left: 5px;
+    }
+}
